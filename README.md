@@ -58,3 +58,29 @@ management, and progress tracking.
 - The system uses only free and open-source technologies  
 - Development is constrained to a single academic semester  
 - The application must support concurrent editing with conflict resolution  
+
+## MoSCoW Prioritization
+
+### Must Have
+- User registration and login
+- Create and join study groups
+- Real-time collaborative mind map editor
+- Convert mind map nodes into tasks
+- Task assignment and status tracking
+- Persistent storage using database
+
+### Should Have
+- Real-time synchronization using WebSockets
+- Role-based access control
+- Progress tracking dashboard
+- Conflict detection during concurrent edits
+
+### Could Have
+- Notifications for task updates
+- Export mind map as image or JSON
+- UI customization options
+
+### Won’t Have (For Now)
+- Advanced analytics and reports
+- Mobile application
+- AI-based study recommendations
