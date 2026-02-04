@@ -84,3 +84,13 @@ management, and progress tracking.
 - Advanced analytics and reports
 - Mobile application
 - AI-based study recommendations
+
+## Branching Strategy
+
+This project follows GitHub Flow.
+
+- The `main` branch contains stable code.
+- Feature branches are created for development and setup tasks.
+
+Example feature branch:
+- feature/dev-setup
