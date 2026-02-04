@@ -94,3 +94,35 @@ This project follows GitHub Flow.
 
 Example feature branch:
 - feature/dev-setup
+
+## Quick Start – Local Development
+
+### Prerequisites
+- Git
+- Docker Desktop
+
+### Steps
+1. Clone the repository:
+   git clone https://github.com/<your-username>/synergy-study-planner.git
+
+2. Navigate to the project directory:
+   cd synergy-study-planner
+
+3. Run the application using Docker:
+   docker compose up --build
+
+4. Open the application in a browser:
+   http://localhost:3000
+
+## Local Development Tools
+
+- Git and GitHub for version control
+- Docker and Docker Compose for containerized local development
+- Visual Studio Code as the primary code editor
+- Figma (Free) for UI wireframe design
+
+## Architecture Overview
+
+The system follows a client–server architecture with a containerized frontend
+served via Docker and Nginx, designed to support future backend and real-time
+services.
