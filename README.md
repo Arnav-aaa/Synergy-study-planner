@@ -126,3 +126,9 @@ Example feature branch:
 The system follows a client–server architecture with a containerized frontend
 served via Docker and Nginx, designed to support future backend and real-time
 services.
+
+## Software Design
+
+The system follows a layered client-server architecture with a dedicated real-time communication layer using WebSocket. The design emphasizes modularity, high cohesion, low coupling, and maintainability.
+
+Architecture diagrams and UI designs are available in the /design/ folder.
