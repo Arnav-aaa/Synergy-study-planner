@@ -129,6 +129,24 @@ services.
 
 ## Software Design
 
-The system follows a layered client-server architecture with a dedicated real-time communication layer using WebSocket. The design emphasizes modularity, high cohesion, low coupling, and maintainability.
+The system follows a layered client-server architecture with a dedicated real-time communication layer using WebSocket (Socket.io).
 
-Architecture diagrams and UI designs are available in the /design/ folder.
+The design emphasizes:
+- Modularity
+- High cohesion
+- Low coupling
+- Separation of concerns
+- Maintainability
+
+### Architecture Diagram
+
+### UI Screens
+Login Screen  
+
+Dashboard  
+
+Mind Map Editor  
+
+Task Manager  
+
+Progress Tracking  
