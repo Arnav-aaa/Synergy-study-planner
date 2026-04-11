@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.login-page {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  width: 100vw;   /* 🔥 ADD THIS */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  width: 420px;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;  /* 🔥 more breathing space */
+}
+
+.logo h1 {
+  color: #6c63ff;
+  margin: 0;
+  font-size: 42px;
+}
+
+.logo p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;   /* 🔥 increased spacing */
+}
+
+h2 {
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 24px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+.options a {
+  color: #3f51ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #3f51ff, #8b2cff);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(63, 81, 255, 0.3);
+}
+
+.signup {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.signup a {
+  color: #3f51ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  color: #999;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider span {
+  margin: 0 10px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  /* 🔥 better spacing */
+}
+
+.social-btn:hover {
+  background: #f5f5f5;
+}
+
+.social-btn img {
+  width: 22px;
+  height: 22px;
+}

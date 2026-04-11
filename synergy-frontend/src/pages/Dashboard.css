@@ -1,0 +1,217 @@
+/* PAGE */
+.dashboard-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px; /* 🔥 less padding for more space */
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* CARD */
+.dashboard-card {
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px; /* 🔥 less padding */
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* TITLE */
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* INPUT */
+.task-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to right, #3f51ff, #8b2cff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.2s ease;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(63, 81, 255, 0.3);
+}
+
+.connection-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.connection-controls label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.connection-type-select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.node-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.node-controls label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.node-color-select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* CANVAS */
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 2000px; /* 🔥 very big workspace */
+  background: #eef1f7;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* CONNECTION SVG */
+.connections {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.connections line {
+  pointer-events: none;
+}
+
+.connections circle,
+.connections text {
+  pointer-events: auto;
+}
+
+/* NODE (FINAL CLEAN VERSION) */
+.node {
+  position: absolute;
+  z-index: 1;
+  width: 140px;
+  min-height: 70px;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  cursor: grab;
+  transition: transform 0.15s ease;
+}
+
+/* DRAG EFFECT */
+.node:active {
+  cursor: grabbing;
+}
+
+/* HOVER EFFECT */
+.node:hover {
+  transform: scale(1.05);
+}
+
+/* NODE TEXT */
+.node strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* USER TEXT */
+.node-user {
+  font-size: 11px;
+  color: #666;
+}
+
+/* 🔥 DELETE BUTTON (PERFECT POSITION, NO SHIFT) */
+.delete-btn-fixed {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 6px;
+  padding: 4px 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn-fixed:hover {
+  background: #e60000;
+}
+
+/* 🔴 CONNECTION DELETE DOT */
+.connections circle {
+  transition: 0.2s;
+}
+
+.connections circle:hover {
+  transform: scale(1.3);
+  fill: #ff0000;
+}
+
+/* ANIMATION (OPTIONAL CLEAN) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.node {
+  animation: fadeIn 0.25s ease-in;
+}
